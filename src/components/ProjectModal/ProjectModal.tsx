@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { X, ExternalLink, Github, Calendar, Tag, MapPin } from 'lucide-react';
+import { X, ExternalLink, Github, Calendar, Tag } from 'lucide-react';
 import { Project } from '../../types/project';
 
 interface ProjectModalProps {

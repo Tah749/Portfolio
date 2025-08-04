@@ -11,7 +11,7 @@ export interface Project {
   longDescription?: string;
   image: string;
   photos?: ProjectPhoto[];
-  liveUrl?: string;
+  liveUrl?: string | null;
   githubUrl?: string;
   technologies: string[];
   category: string;

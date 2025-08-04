@@ -57,7 +57,7 @@ export default function Hero() {
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold">
-                <span className="text-gray-900 dark:text-white">Hi, I'm<br></br></span>
+                <span className="text-gray-900 dark:text-white">Hi, I&apos;m<br></br></span>
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Tahmed Shamim
                 </span>

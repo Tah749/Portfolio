@@ -310,23 +310,23 @@ export default function ProjectDetailsPage() {
                <X size={24} className="text-gray-600 dark:text-gray-300" />
              </button>
 
-             {/* Navigation Buttons */}
-             {project.photos.length > 1 && (
-               <>
-                 <button
-                   onClick={() => setSelectedPhotoIndex((selectedPhotoIndex - 1 + project.photos.length) % project.photos.length)}
-                   className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-white dark:hover:bg-gray-800 transition-colors duration-200"
-                 >
-                   <ChevronLeft size={24} className="text-gray-600 dark:text-gray-300" />
-                 </button>
-                 <button
-                   onClick={() => setSelectedPhotoIndex((selectedPhotoIndex + 1) % project.photos.length)}
-                   className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-white dark:hover:bg-gray-800 transition-colors duration-200"
-                 >
-                   <ChevronRight size={24} className="text-gray-600 dark:text-gray-300" />
-                 </button>
-               </>
-             )}
+                           {/* Navigation Buttons */}
+              {project.photos && project.photos.length > 1 && (
+                <>
+                  <button
+                    onClick={() => setSelectedPhotoIndex((selectedPhotoIndex - 1 + project.photos!.length) % project.photos!.length)}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-white dark:hover:bg-gray-800 transition-colors duration-200"
+                  >
+                    <ChevronLeft size={24} className="text-gray-600 dark:text-gray-300" />
+                  </button>
+                  <button
+                    onClick={() => setSelectedPhotoIndex((selectedPhotoIndex + 1) % project.photos!.length)}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-white dark:hover:bg-gray-800 transition-colors duration-200"
+                  >
+                    <ChevronRight size={24} className="text-gray-600 dark:text-gray-300" />
+                  </button>
+                </>
+              )}
 
              {/* Photo */}
              <div className="relative">
@@ -347,14 +347,14 @@ export default function ProjectDetailsPage() {
                )}
              </div>
 
-             {/* Photo Counter */}
-             {project.photos.length > 1 && (
-               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 px-4 py-2 bg-black/50 backdrop-blur-sm rounded-full">
-                 <p className="text-white text-sm font-medium">
-                   {selectedPhotoIndex + 1} of {project.photos.length}
-                 </p>
-               </div>
-             )}
+                           {/* Photo Counter */}
+              {project.photos && project.photos.length > 1 && (
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 px-4 py-2 bg-black/50 backdrop-blur-sm rounded-full">
+                  <p className="text-white text-sm font-medium">
+                    {selectedPhotoIndex + 1} of {project.photos.length}
+                  </p>
+                </div>
+              )}
            </div>
          </div>
        )}

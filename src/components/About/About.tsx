@@ -54,7 +54,7 @@ export default function About() {
             Turning Ideas Into <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Digital Reality</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer with a love for creating innovative solutions. 
+            I&apos;m a passionate full-stack developer with a love for creating innovative solutions. 
             With expertise in modern web technologies, I bring ideas to life through clean code and exceptional user experiences.
           </p>
         </div>
@@ -67,13 +67,13 @@ export default function About() {
                 My Journey
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                I started my journey in web development over 3 years ago, and since then, I've had the privilege 
+                I started my journey in web development over 3 years ago, and since then, I&apos;ve had the privilege 
                 of working on diverse projects that have shaped my expertise. From small business websites to 
-                complex enterprise applications, I've learned that great software is built on a foundation of 
+                complex enterprise applications, I&apos;ve learned that great software is built on a foundation of 
                 clean code, user-centered design, and scalable architecture.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
+                When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open-source projects, 
                 or sharing knowledge with the developer community. I believe in continuous learning and staying 
                 up-to-date with the latest industry trends.
               </p>

@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import { getProjects, getFeaturedProjects, getProjectsByCategory } from '../../utils/data';
+import { getProjects, getProjectsByCategory } from '../../utils/data';
 import { Project } from '../../types/project';
 
 export default function Projects() {
