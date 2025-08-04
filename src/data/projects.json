@@ -1,0 +1,69 @@
+{
+  "projects": [
+    {
+      "id": "moviefinder",
+      "title": "MovieFinder",
+      "description": "A web application for discovering and searching movies with detailed information and ratings",
+      "longDescription": "MovieFinder is a comprehensive movie discovery platform that allows users to search for films, view detailed information including cast, ratings, and plot summaries. Built with modern JavaScript, it provides an intuitive interface for movie enthusiasts to explore new content and track their favorite films.",
+      "image": "/images/projects/moviefinder.jpg",
+      "liveUrl": "https://tah749.github.io/MovieFinder",
+      "githubUrl": "https://github.com/Tah749/MovieFinder",
+      "technologies": ["JavaScript", "HTML", "CSS", "Movie API"],
+      "category": "web-app",
+      "featured": true,
+      "date": "2024-01-15"
+    },
+    {
+      "id": "factions-discord-bot",
+      "title": "Factions Discord Bot",
+      "description": "A Discord bot for managing faction-based gameplay and community interactions",
+      "longDescription": "FactionsDiscordBot is a feature-rich Discord bot designed to enhance faction-based gaming communities. It provides tools for faction management, player tracking, automated events, and community engagement features. The bot helps server administrators create immersive gaming experiences with automated moderation and gameplay mechanics.",
+      "image": "/images/projects/discord-bot.jpg",
+      "liveUrl": null,
+      "githubUrl": "https://github.com/Tah749/FactionsDiscordBot",
+      "technologies": ["JavaScript", "Discord.js", "Node.js", "MongoDB"],
+      "category": "bot",
+      "featured": true,
+      "date": "2024-02-20"
+    },
+    {
+      "id": "scout",
+      "title": "Scout",
+      "description": "A scouting and reconnaissance application for data gathering and analysis",
+      "longDescription": "Scout is a data collection and analysis tool designed for gathering information from various sources. It provides automated data extraction, processing capabilities, and reporting features to help users efficiently collect and analyze information for research, monitoring, or investigative purposes.",
+      "image": "/images/projects/scout.jpg",
+      "liveUrl": null,
+      "githubUrl": "https://github.com/Tah749/Scout",
+      "technologies": ["JavaScript", "Node.js", "Data Processing", "API Integration"],
+      "category": "tool",
+      "featured": false,
+      "date": "2024-03-10"
+    },
+    {
+      "id": "fpl-visualisation",
+      "title": "FPL Visualization",
+      "description": "Data visualization project for Fantasy Premier League statistics and analysis",
+      "longDescription": "FPL-Visualisation is a comprehensive data analysis project that creates interactive visualizations for Fantasy Premier League data. Using Jupyter Notebooks and data science libraries, it provides insights into player performance, team statistics, and strategic recommendations for FPL managers. The project demonstrates advanced data visualization techniques and statistical analysis.",
+      "image": "/images/projects/fpl-viz.jpg",
+      "liveUrl": null,
+      "githubUrl": "https://github.com/Tah749/FPL-Visualisation",
+      "technologies": ["Python", "Jupyter Notebook", "Pandas", "Matplotlib", "Seaborn"],
+      "category": "data-science",
+      "featured": true,
+      "date": "2024-04-05"
+    },
+    {
+      "id": "golf-buddy",
+      "title": "Golf Buddy",
+      "description": "A golf companion app for tracking scores, statistics, and improving your game",
+      "longDescription": "GolfBuddy is a comprehensive golf application designed to help players track their performance, analyze statistics, and improve their game. It features score tracking, handicap calculation, course management, and performance analytics to provide golfers with detailed insights into their playing patterns and areas for improvement.",
+      "image": "/images/projects/golf-buddy.jpg",
+      "liveUrl": null,
+      "githubUrl": "https://github.com/Tah749/GolfBuddy",
+      "technologies": ["JavaScript", "React", "Local Storage", "Sports API"],
+      "category": "mobile-app",
+      "featured": false,
+      "date": "2024-05-01"
+    }
+  ]
+} 
