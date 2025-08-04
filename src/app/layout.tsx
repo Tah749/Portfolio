@@ -7,13 +7,13 @@ import Footer from '../components/Footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Your Name - Developer Portfolio',
-  description: 'Personal portfolio showcasing web development projects',
-  authors: [{ name: 'Your Name' }],
+  title: 'Tahmed Shamim - Developer Portfolio',
+  description: 'Personal portfolio showcasing development projects',
+  authors: [{ name: 'Tahmed Shamim' }],
   keywords: ['developer', 'portfolio', 'web development', 'React', 'Node.js'],
   openGraph: {
-    title: 'Your Name - Developer Portfolio',
-    description: 'Personal portfolio showcasing web development projects',
+    title: 'Tahmed Shamim - Developer Portfolio',
+    description: 'Personal portfolio showcasing development projects',
     type: 'website',
   },
 }

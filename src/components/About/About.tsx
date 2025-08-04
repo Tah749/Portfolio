@@ -85,7 +85,7 @@ export default function About() {
                 Technical Skills
               </h3>
               <div className="space-y-6">
-                {skills.map((skill, index) => {
+                {skills.map((skill) => {
                   const IconComponent = skill.icon;
                   return (
                     <div key={skill.name} className="group">
@@ -121,8 +121,8 @@ export default function About() {
               Professional Experience
             </h3>
             <div className="space-y-8">
-              {experiences.map((experience, index) => (
-                <div key={index} className="relative group">
+              {experiences.map((experience) => (
+                <div key={experience.title} className="relative group">
                   {/* Timeline Line */}
                   <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600"></div>
                   
@@ -146,9 +146,9 @@ export default function About() {
                       {experience.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      {experience.technologies.map((tech, techIndex) => (
+                      {experience.technologies.map((tech) => (
                         <span
-                          key={techIndex}
+                          key={tech}
                           className="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-gray-600 dark:text-gray-300 text-xs rounded-md"
                         >
                           {tech}
@@ -168,7 +168,7 @@ export default function About() {
             <Zap className="w-8 h-8 text-blue-600" />
             <div className="text-left">
               <h4 className="font-bold text-gray-900 dark:text-white">Ready to work together?</h4>
-              <p className="text-gray-600 dark:text-gray-300">Let's discuss your next project</p>
+              <p className="text-gray-600 dark:text-gray-300">Let&apos;s discuss your next project</p>
             </div>
             <a
               href="#contact"

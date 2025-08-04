@@ -1,5 +1,5 @@
 'use client';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -40,7 +40,7 @@ export default function Footer() {
               </h3>
               <p className="text-gray-400 mt-4 leading-relaxed">
                 Full-stack developer passionate about creating innovative digital solutions. 
-                Let's build something amazing together.
+                Let&apos;s build something amazing together.
               </p>
             </div>
             

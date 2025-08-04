@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Send, CheckCircle } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -67,10 +67,10 @@ export default function Contact() {
             Get In Touch
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Let's Build Something <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Amazing</span>
+            Let&apos;s Build Something <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Amazing</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm always interested in new opportunities and exciting projects. 
+            I&apos;m always interested in new opportunities and exciting projects. 
             Whether you have a question or just want to say hi, feel free to reach out!
           </p>
         </div>
@@ -80,11 +80,11 @@ export default function Contact() {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Let's Connect
+                Let&apos;s Connect
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                I'm currently available for freelance work and full-time opportunities. 
-                If you have a project that needs some creative thinking, I'd love to hear about it.
+                I&apos;m currently available for freelance work and full-time opportunities. 
+                If you have a project that needs some creative thinking, I&apos;d love to hear about it.
               </p>
             </div>
 
@@ -121,7 +121,7 @@ export default function Contact() {
                 <span className="font-semibold text-green-700 dark:text-green-400">Available for new opportunities</span>
               </div>
               <p className="text-green-600 dark:text-green-300 text-sm">
-                I'm currently accepting new projects and would love to hear about yours.
+                I&apos;m currently accepting new projects and would love to hear about yours.
               </p>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function Contact() {
                   Message Sent Successfully!
                 </h4>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Thank you for reaching out. I'll get back to you soon!
+                  Thank you for reaching out. I&apos;ll get back to you soon!
                 </p>
               </div>
             ) : (
@@ -191,7 +191,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
-                    placeholder="What's this about?"
+                    placeholder="What&apos;s this about?"
                   />
                 </div>
                 
