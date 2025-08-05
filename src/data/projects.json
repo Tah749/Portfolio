@@ -56,7 +56,7 @@
       "title": "Scout",
       "description": "A full-featured fantasy football website built in 2022, for my GCSE Computer Science Coursework (OCR H446-03).",
       "longDescription": "A full-featured fantasy football website built in 2022, for my GCSE Computer Science Coursework (OCR H446-03).\n\nThis platform allows users to build fantasy football teams using real-world Premier League data, compete in leagues, and get AI-based squad recommendations.",
-      "image": "/images/projects/scout.png",
+      "image": "/images/projects/scout/scout.png",
       "liveUrl": null,
       "githubUrl": "https://github.com/Tah749/Scout",
       "technologies": ["JavaScript", "Node.js", "Python", "Data Processing", "API Integration"],
