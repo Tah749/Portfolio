@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { ArrowLeft, ExternalLink, Github, Calendar, Tag, MapPin, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import Image from 'next/image';
 import { Project } from '../../../types/project';
 import { getProjects } from '../../../utils/data';
 
@@ -106,9 +107,11 @@ export default function ProjectDetailsPage() {
 
       {/* Hero Section */}
       <div className="relative h-96 md:h-[500px] overflow-hidden">
-        <img
+        <Image
           src={project.image}
           alt={project.title}
+          width={1200}
+          height={600}
           className="w-full h-full object-cover"
           onError={(e) => {
             e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop';
@@ -177,6 +180,34 @@ export default function ProjectDetailsPage() {
               </div>
             </div>
 
+            {/* Video Demo */}
+            {project.videoUrl && (
+              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-8">
+                <div className="relative w-full">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+                    <span className="mr-2">▶️</span>
+                    Project Demo Video
+                  </h3>
+                  
+                  <div className="relative w-full bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <div className="relative pb-[56.25%] h-0">
+                      <iframe
+                        src={project.videoUrl}
+                        frameBorder="0"
+                        allowFullScreen
+                        className="absolute top-0 left-0 w-full h-full"
+                        title="Project Demo Video"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="mt-3 text-sm text-gray-600 dark:text-gray-400 text-center">
+                    Click to play • Powered by Loom
+                  </div>
+                </div>
+              </div>
+            )}
+
                          {/* Technologies */}
              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-8">
                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Technologies Used</h2>
@@ -204,9 +235,11 @@ export default function ProjectDetailsPage() {
                        onClick={() => setSelectedPhotoIndex(index)}
                      >
                        <div className="relative aspect-video overflow-hidden">
-                         <img
+                         <Image
                            src={photo.url}
                            alt={photo.alt || `Project screenshot ${index + 1}`}
+                           width={400}
+                           height={300}
                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                            onError={(e) => {
                              e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop';
@@ -330,9 +363,11 @@ export default function ProjectDetailsPage() {
 
              {/* Photo */}
              <div className="relative">
-               <img
+               <Image
                  src={project.photos[selectedPhotoIndex].url}
                  alt={project.photos[selectedPhotoIndex].alt || `Project screenshot ${selectedPhotoIndex + 1}`}
+                 width={800}
+                 height={600}
                  className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
                  onError={(e) => {
                    e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop';

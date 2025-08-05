@@ -5,28 +5,9 @@
       "title": "MovieFinder",
       "description": "A web application for discovering and searching movies with detailed information and ratings",
       "longDescription": "MovieFinder is a comprehensive movie discovery platform that allows users to search for films, view detailed information including cast, ratings, and plot summaries. Built with modern JavaScript, it provides an intuitive interface for movie enthusiasts to explore new content and track their favorite films.",
-      "image": "/images/projects/moviefinder.jpg",
+      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop",
+      "videoUrl": "https://www.loom.com/embed/your-video-id-here",
       "photos": [
-        {
-          "url": "/images/projects/moviefinder/homepage.jpg",
-          "caption": "Homepage with featured movies and search functionality",
-          "alt": "MovieFinder homepage"
-        },
-        {
-          "url": "/images/projects/moviefinder/search-results.jpg",
-          "caption": "Search results with movie cards and filters",
-          "alt": "MovieFinder search results"
-        },
-        {
-          "url": "/images/projects/moviefinder/movie-details.jpg",
-          "caption": "Detailed movie information page with cast and ratings",
-          "alt": "MovieFinder movie details"
-        },
-        {
-          "url": "/images/projects/moviefinder/mobile-view.jpg",
-          "caption": "Responsive mobile design for on-the-go movie browsing",
-          "alt": "MovieFinder mobile view"
-        }
       ],
       "liveUrl": "https://tah749.github.io/MovieFinder",
       "githubUrl": "https://github.com/Tah749/MovieFinder",
@@ -37,25 +18,15 @@
     },
     {
       "id": "factions-discord-bot",
-      "title": "Factions Discord Bot",
-      "description": "A Discord bot for managing faction-based gameplay and community interactions",
+      "title": "Minecraft <-> Discord Bot",
+      "description": "A robust, full-featured Discord bot designed specifically for Minecraft Factions servers. Xenon connects Discord users to their in-game counterparts and provides powerful moderation, faction management, alerts, and automation tools.",
       "longDescription": "FactionsDiscordBot is a feature-rich Discord bot designed to enhance faction-based gaming communities. It provides tools for faction management, player tracking, automated events, and community engagement features. The bot helps server administrators create immersive gaming experiences with automated moderation and gameplay mechanics.",
-      "image": "/images/projects/discord-bot.jpg",
+      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop",
       "photos": [
         {
-          "url": "/images/projects/discord-bot/commands.jpg",
-          "caption": "Bot commands and help system",
-          "alt": "Discord bot commands"
-        },
-        {
-          "url": "/images/projects/discord-bot/faction-management.jpg",
-          "caption": "Faction creation and management interface",
-          "alt": "Faction management"
-        },
-        {
-          "url": "/images/projects/discord-bot/leaderboard.jpg",
-          "caption": "Player leaderboard and statistics tracking",
-          "alt": "Player leaderboard"
+          "url": "/images/projects/xenon-bot/FTopUpdate.webp",
+          "caption": "Homepage with featured movies and search functionality",
+          "alt": "MovieFinder homepage"
         }
       ],
       "liveUrl": null,
@@ -83,28 +54,8 @@
       "title": "FPL Visualization",
       "description": "Data visualization project for Fantasy Premier League statistics and analysis",
       "longDescription": "FPL-Visualisation is a comprehensive data analysis project that creates interactive visualizations for Fantasy Premier League data. Using Jupyter Notebooks and data science libraries, it provides insights into player performance, team statistics, and strategic recommendations for FPL managers. The project demonstrates advanced data visualization techniques and statistical analysis.",
-      "image": "/images/projects/fpl-viz.jpg",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
       "photos": [
-        {
-          "url": "/images/projects/fpl-viz/player-analysis.jpg",
-          "caption": "Player performance analysis and statistics",
-          "alt": "FPL player analysis"
-        },
-        {
-          "url": "/images/projects/fpl-viz/team-stats.jpg",
-          "caption": "Team statistics and performance metrics",
-          "alt": "FPL team statistics"
-        },
-        {
-          "url": "/images/projects/fpl-viz/visualization-dashboard.jpg",
-          "caption": "Interactive dashboard with multiple visualizations",
-          "alt": "FPL visualization dashboard"
-        },
-        {
-          "url": "/images/projects/fpl-viz/notebook-code.jpg",
-          "caption": "Jupyter notebook with data analysis code",
-          "alt": "FPL notebook code"
-        }
       ],
       "liveUrl": null,
       "githubUrl": "https://github.com/Tah749/FPL-Visualisation",
@@ -118,7 +69,7 @@
       "title": "Golf Buddy",
       "description": "A golf companion app for tracking scores, statistics, and improving your game",
       "longDescription": "GolfBuddy is a comprehensive golf application designed to help players track their performance, analyze statistics, and improve their game. It features score tracking, handicap calculation, course management, and performance analytics to provide golfers with detailed insights into their playing patterns and areas for improvement.",
-      "image": "/images/projects/golf-buddy.jpg",
+      "image": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800&h=400&fit=crop",
       "liveUrl": null,
       "githubUrl": "https://github.com/Tah749/GolfBuddy",
       "technologies": ["JavaScript", "React", "Local Storage", "Sports API"],

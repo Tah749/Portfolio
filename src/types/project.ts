@@ -11,6 +11,7 @@ export interface Project {
   longDescription?: string;
   image: string;
   photos?: ProjectPhoto[];
+  videoUrl?: string; // Loom video URL
   liveUrl?: string | null;
   githubUrl?: string;
   technologies: string[];

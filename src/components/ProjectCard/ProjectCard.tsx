@@ -1,6 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import { ExternalLink, Github, Eye } from 'lucide-react';
+import { ExternalLink, Github, Eye, Play } from 'lucide-react';
+import Image from 'next/image';
 import { Project } from '../../types/project';
 
 interface ProjectCardProps {
@@ -22,9 +23,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     >
       {/* Project Image */}
       <div className="relative overflow-hidden h-48">
-        <img
+        <Image
           src={project.image}
           alt={project.title}
+          width={500}
+          height={300}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           onError={(e) => {
             e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop';
@@ -65,6 +68,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <div className="absolute top-4 left-4">
             <span className="px-3 py-1 bg-gradient-to-r from-orange-400 to-red-500 text-white text-xs font-semibold rounded-full shadow-lg">
               Featured
+            </span>
+          </div>
+        )}
+
+        {/* Video Badge */}
+        {project.videoUrl && (
+          <div className="absolute top-4 right-4">
+            <span className="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white text-xs font-semibold rounded-full shadow-lg flex items-center gap-1">
+              <Play size={12} />
+              Demo
             </span>
           </div>
         )}

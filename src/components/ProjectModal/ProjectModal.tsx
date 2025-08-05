@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { X, ExternalLink, Github, Calendar, Tag } from 'lucide-react';
+import Image from 'next/image';
 import { Project } from '../../types/project';
 
 interface ProjectModalProps {
@@ -58,9 +59,11 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
 
         {/* Project Image */}
         <div className="relative h-64 md:h-80 overflow-hidden">
-          <img
+          <Image
             src={project.image}
             alt={project.title}
+            width={800}
+            height={400}
             className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop';

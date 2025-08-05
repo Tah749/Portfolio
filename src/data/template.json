@@ -1,0 +1,130 @@
+{
+    "projects": [
+      {
+        "id": "moviefinder",
+        "title": "MovieFinder",
+        "description": "A web application for discovering and searching movies with detailed information and ratings",
+        "longDescription": "MovieFinder is a comprehensive movie discovery platform that allows users to search for films, view detailed information including cast, ratings, and plot summaries. Built with modern JavaScript, it provides an intuitive interface for movie enthusiasts to explore new content and track their favorite films.",
+        "image": "/images/projects/scout.png",
+        "photos": [
+          {
+            "url": "/images/projects/moviefinder/homepage.jpg",
+            "caption": "Homepage with featured movies and search functionality",
+            "alt": "MovieFinder homepage"
+          },
+          {
+            "url": "/images/projects/moviefinder/search-results.jpg",
+            "caption": "Search results with movie cards and filters",
+            "alt": "MovieFinder search results"
+          },
+          {
+            "url": "/images/projects/moviefinder/movie-details.jpg",
+            "caption": "Detailed movie information page with cast and ratings",
+            "alt": "MovieFinder movie details"
+          },
+          {
+            "url": "/images/projects/moviefinder/mobile-view.jpg",
+            "caption": "Responsive mobile design for on-the-go movie browsing",
+            "alt": "MovieFinder mobile view"
+          }
+        ],
+        "liveUrl": "https://tah749.github.io/MovieFinder",
+        "githubUrl": "https://github.com/Tah749/MovieFinder",
+        "technologies": ["JavaScript", "HTML", "CSS", "Movie API"],
+        "category": "web-app",
+        "featured": true,
+        "date": "2024-01-15"
+      },
+      {
+        "id": "factions-discord-bot",
+        "title": "Factions Discord Bot",
+        "description": "A Discord bot for managing faction-based gameplay and community interactions",
+        "longDescription": "FactionsDiscordBot is a feature-rich Discord bot designed to enhance faction-based gaming communities. It provides tools for faction management, player tracking, automated events, and community engagement features. The bot helps server administrators create immersive gaming experiences with automated moderation and gameplay mechanics.",
+        "image": "/images/projects/discord-bot.jpg",
+        "photos": [
+          {
+            "url": "/images/projects/discord-bot/commands.jpg",
+            "caption": "Bot commands and help system",
+            "alt": "Discord bot commands"
+          },
+          {
+            "url": "/images/projects/discord-bot/faction-management.jpg",
+            "caption": "Faction creation and management interface",
+            "alt": "Faction management"
+          },
+          {
+            "url": "/images/projects/discord-bot/leaderboard.jpg",
+            "caption": "Player leaderboard and statistics tracking",
+            "alt": "Player leaderboard"
+          }
+        ],
+        "liveUrl": null,
+        "githubUrl": "https://github.com/Tah749/FactionsDiscordBot",
+        "technologies": ["JavaScript", "Discord.js", "Node.js", "MongoDB"],
+        "category": "bot",
+        "featured": true,
+        "date": "2024-02-20"
+      },
+      {
+        "id": "scout",
+        "title": "Scout",
+        "description": "A full-featured fantasy football website built in 2022, for my GCSE Computer Science Coursework (OCR H446-03).",
+        "longDescription": "A full-featured fantasy football website built in 2022, for my GCSE Computer Science Coursework (OCR H446-03).\n\nThis platform allows users to build fantasy football teams using real-world Premier League data, compete in leagues, and get AI-based squad recommendations.",
+        "image": "/images/projects/scout.png",
+        "liveUrl": null,
+        "githubUrl": "https://github.com/Tah749/Scout",
+        "technologies": ["JavaScript", "Node.js", "Python", "Data Processing", "API Integration"],
+        "category": "tool",
+        "featured": false,
+        "date": "2022-03-10"
+      },
+      {
+        "id": "fpl-visualisation",
+        "title": "FPL Visualization",
+        "description": "Data visualization project for Fantasy Premier League statistics and analysis",
+        "longDescription": "FPL-Visualisation is a comprehensive data analysis project that creates interactive visualizations for Fantasy Premier League data. Using Jupyter Notebooks and data science libraries, it provides insights into player performance, team statistics, and strategic recommendations for FPL managers. The project demonstrates advanced data visualization techniques and statistical analysis.",
+        "image": "/images/projects/fpl-viz.jpg",
+        "photos": [
+          {
+            "url": "/images/projects/fpl-viz/player-analysis.jpg",
+            "caption": "Player performance analysis and statistics",
+            "alt": "FPL player analysis"
+          },
+          {
+            "url": "/images/projects/fpl-viz/team-stats.jpg",
+            "caption": "Team statistics and performance metrics",
+            "alt": "FPL team statistics"
+          },
+          {
+            "url": "/images/projects/fpl-viz/visualization-dashboard.jpg",
+            "caption": "Interactive dashboard with multiple visualizations",
+            "alt": "FPL visualization dashboard"
+          },
+          {
+            "url": "/images/projects/fpl-viz/notebook-code.jpg",
+            "caption": "Jupyter notebook with data analysis code",
+            "alt": "FPL notebook code"
+          }
+        ],
+        "liveUrl": null,
+        "githubUrl": "https://github.com/Tah749/FPL-Visualisation",
+        "technologies": ["Python", "Jupyter Notebook", "Pandas", "Matplotlib", "Seaborn"],
+        "category": "data-science",
+        "featured": true,
+        "date": "2024-04-05"
+      },
+      {
+        "id": "golf-buddy",
+        "title": "Golf Buddy",
+        "description": "A golf companion app for tracking scores, statistics, and improving your game",
+        "longDescription": "GolfBuddy is a comprehensive golf application designed to help players track their performance, analyze statistics, and improve their game. It features score tracking, handicap calculation, course management, and performance analytics to provide golfers with detailed insights into their playing patterns and areas for improvement.",
+        "image": "/images/projects/golf-buddy.jpg",
+        "liveUrl": null,
+        "githubUrl": "https://github.com/Tah749/GolfBuddy",
+        "technologies": ["JavaScript", "React", "Local Storage", "Sports API"],
+        "category": "mobile-app",
+        "featured": false,
+        "date": "2024-05-01"
+      }
+    ]
+  } 
