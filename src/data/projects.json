@@ -20,19 +20,34 @@
       "id": "factions-discord-bot",
       "title": "Minecraft <-> Discord Bot",
       "description": "A robust, full-featured Discord bot designed specifically for Minecraft Factions servers. Xenon connects Discord users to their in-game counterparts and provides powerful moderation, faction management, alerts, and automation tools.",
-      "longDescription": "FactionsDiscordBot is a feature-rich Discord bot designed to enhance faction-based gaming communities. It provides tools for faction management, player tracking, automated events, and community engagement features. The bot helps server administrators create immersive gaming experiences with automated moderation and gameplay mechanics.",
-      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop",
+      "longDescription": "Note: This project was originally created in 2020 and is now deprecated.\n\nA robust, full-featured Discord bot designed specifically for Minecraft Factions servers. Xenon connects Discord users to their in-game counterparts and provides powerful moderation, faction management, alerts, and automation tools.\n\nThis was originally developed as a private project intended for client distribution, which is why MongoDB-based authorization was implemented to control access.\n\n📦 Features\n🔗 In-Game ↔ Discord Integration\nSyncs Minecraft accounts to Discord users.\nSend in-game commands directly from Discord (sudo, runcmd, rotate).\nLink deposit/withdrawal alerts to Discord.\nView faction and player stats live from Minecraft (ftop, ptop, fwho, etc).\n🧾 Application System\nFully configurable recruitment flow via setupquestions, apply, accept, and deny.\nView application status directly on Discord.\n🛠️ Moderation & Utility Tools\nCommands for kick, ban, purge, say, embed, lock, and unlock.\nInformation tools like serverinfo, botstats, listroles, and inrole.\nMathematical utilities (calc, calculator).\nMusic playback via YouTube (play, pause, loop).\n📊 Faction Leaderboards & Stats\nplaytime, deposit, playtop, dtop for player contribution tracking.\nwalls, buffers, rposttop, ctop, btop for checker activity.\nLive ftop, ptop, and baltop integration.\nVanish tracker that allows players to bypass server plugins that hid staff members ingame (vanish)\n🚨 Alerts & Detectors\nTNT, player, and creeper proximity alerts (with coordinates).\nAuto claim, bank, and player count tracking via regex matchers.\nkill logs track PvP deaths using customizable regex.\n🧪 Checks & Raiding Tools\nWall/buffer clearing (clear, bclear), weewoo raid alerts.\nOutpost/KOTH support via routpost, koth, outpost.\n⚙️ Fully Configurable\nYAML-driven config system: bot settings, role/channel IDs, regex formats, toggles.\nBuilt-in settings command for real-time updates to config via Discord.\nOptional modules can be enabled/disabled per feature: walls, bank, music, etc.\nPrerequisites\nNode.js (v12+ recommended)\nDiscord.JS (v12)\nMongoDB (used for auth logging)\nFFmpeg (required for music playback)\nA verified Minecraft account (for the bot)",
+      "image": "/images/projects/xenon-bot/XenonTah.png?w=800&h=400&fit=crop",
       "photos": [
         {
           "url": "/images/projects/xenon-bot/FTopUpdate.webp",
-          "caption": "Homepage with featured movies and search functionality",
-          "alt": "MovieFinder homepage"
+          "caption": "Retrieves ingame leaderboard and formats it for Discord",
+          "alt": "FTOP Update"
+        },
+        {
+          "url": "/images/projects/xenon-bot/FactionInfo.webp",
+          "caption": "Retrieves data about easch faction and formats it for Discord",
+          "alt": "FWHO Update"
+        },
+        {
+          "url": "/images/projects/xenon-bot/whitelisting.webp",
+          "caption": "Links each discord user to their minecraft account",
+          "alt": "Whitelisting"
+        },
+        {
+          "url": "/images/projects/xenon-bot/IngameMusic.webp",
+          "caption": "Ingame command that plays music through the discord bot in a voice channel",
+          "alt": "Ingame Music"
         }
       ],
       "liveUrl": null,
       "githubUrl": "https://github.com/Tah749/FactionsDiscordBot",
-      "technologies": ["JavaScript", "Discord.js", "Node.js", "MongoDB"],
-      "category": "bot",
+      "technologies": ["JavaScript", "Node.js", "JSON", "MongoDB", "YAML", "FFmpeg"],
+      "category": "game-dev",
       "featured": true,
       "date": "2024-02-20"
     },

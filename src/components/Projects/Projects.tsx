@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import { getProjects, getProjectsByCategory } from '../../utils/data';
+import { getProjects, getEnhancedProjects, getProjectsByCategory } from '../../utils/data';
 import { Project } from '../../types/project';
 
 export default function Projects() {
@@ -14,10 +14,21 @@ export default function Projects() {
   useEffect(() => {
     const loadProjects = async () => {
       try {
-        const projectsData = await getProjects();
-        setProjects(projectsData);
-        setFilteredProjects(projectsData); // Show all projects by default
+        // First load basic projects for immediate display
+        const basicProjects = await getProjects();
+        setProjects(basicProjects);
+        setFilteredProjects(basicProjects);
         setIsLoading(false);
+        
+        // Then enhance with README content
+        try {
+          const enhancedProjects = await getEnhancedProjects();
+          setProjects(enhancedProjects);
+          setFilteredProjects(enhancedProjects);
+        } catch (error) {
+          console.warn('Failed to load enhanced project data:', error);
+          // Keep using basic projects if enhancement fails
+        }
       } catch (error) {
         console.error('Error loading projects:', error);
         setIsLoading(false);

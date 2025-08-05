@@ -1,9 +1,36 @@
 import { Project } from '../types/project';
 import { SiteConfig } from '../types/site';
+import { getProjectDescription } from './github';
 
 export async function getProjects(): Promise<Project[]> {
   const projects = await import('../data/projects.json');
   return projects.default.projects;
+}
+
+export async function getEnhancedProjects(): Promise<Project[]> {
+  const projects = await import('../data/projects.json');
+  const baseProjects = projects.default.projects;
+  
+  // Enhance projects with README content from GitHub (client-side only)
+  const enhancedProjects = await Promise.all(
+    baseProjects.map(async (project) => {
+      if (project.githubUrl) {
+        const readmeDescription = await getProjectDescription(
+          project.githubUrl, 
+          project.longDescription || project.description
+        );
+        
+        return {
+          ...project,
+          longDescription: readmeDescription
+        };
+      }
+      
+      return project;
+    })
+  );
+  
+  return enhancedProjects;
 }
 
 export async function getSiteConfig(): Promise<SiteConfig> {

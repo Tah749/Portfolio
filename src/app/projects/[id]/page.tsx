@@ -4,7 +4,7 @@ import { useParams, useRouter } from 'next/navigation';
 import { ArrowLeft, ExternalLink, Github, Calendar, Tag, MapPin, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import Image from 'next/image';
 import { Project } from '../../../types/project';
-import { getProjects } from '../../../utils/data';
+import { getProjects, getEnhancedProjects } from '../../../utils/data';
 
 export default function ProjectDetailsPage() {
   const params = useParams();
@@ -16,18 +16,32 @@ export default function ProjectDetailsPage() {
   useEffect(() => {
     const loadProject = async () => {
       try {
-        const projects = await getProjects();
-        const foundProject = projects.find(p => p.id === params.id);
-        if (foundProject) {
-          setProject(foundProject);
-        } else {
+        // First load basic project for immediate display
+        const basicProjects = await getProjects();
+        const basicProject = basicProjects.find(p => p.id === params.id);
+        
+        if (!basicProject) {
           router.push('/#projects');
+          return;
+        }
+        
+        setProject(basicProject);
+        setLoading(false);
+        
+        // Then enhance with README content
+        try {
+          const enhancedProjects = await getEnhancedProjects();
+          const enhancedProject = enhancedProjects.find(p => p.id === params.id);
+          if (enhancedProject) {
+            setProject(enhancedProject);
+          }
+        } catch (error) {
+          console.warn('Failed to load enhanced project data:', error);
+          // Keep using basic project if enhancement fails
         }
       } catch (error) {
         console.error('Error loading project:', error);
         router.push('/#projects');
-      } finally {
-        setLoading(false);
       }
     };
 
@@ -150,9 +164,12 @@ export default function ProjectDetailsPage() {
               
               {project.longDescription && (
                 <div className="prose prose-lg dark:prose-invert max-w-none mb-8">
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-                    {project.longDescription}
-                  </p>
+                  <div 
+                    className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg"
+                    dangerouslySetInnerHTML={{ 
+                      __html: project.longDescription.replace(/\n/g, '<br>').replace(/<br><br><br>/g, '<br><br>') 
+                    }}
+                  />
                 </div>
               )}
 
