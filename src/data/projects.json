@@ -1,6 +1,37 @@
 {
   "projects": [
     {
+      "id": "tripmates",
+      "title": "TripMates",
+      "description": "A mobile applicaton for planning trips with friends",
+      "longDescription": "TripMates is a mobile application designed to simplify group travel planning. It allows users to create and manage trips, invite friends, and share travel details. The app provides a user-friendly interface for organizing group activities, accommodation, and transportation, making it easier to coordinate with friends and family.",
+      "image": "/images/projects/tripmates/TripMates.png",
+      "photos": [
+      ],
+      "liveUrl": null,
+      "githubUrl": null,
+      "technologies": ["React", "Tailwind", "Expo", "TypeScript", "Supabase"],
+      "category": "mobile-app",
+      "featured": true,
+      "date": "2025-08-05"
+    },
+    {
+      "id": "plana",
+      "title": "Plana",
+      "description": "A web application that streamlines the planning permission application process for developers",
+      "longDescription": "Plana is a web application designed to simplify the planning permission application process for developers through the use of AI. It provides a user-friendly interface that allows developers to input their project details and receive a detailed planning permission application in return. The application is currently in development and is not yet live.",
+      "image": "/images/projects/plana/Plana.png",
+      "videoUrl": "https://www.loom.com/share/555aab69bb2c40f09e4089ae62916589?sid=c0ecc33d-e013-4e13-82bf-d09f0da3560e",
+      "photos": [
+      ],
+      "liveUrl": null,
+      "githubUrl": null,
+      "technologies": ["Next.js", "Tailwind", "TypeScript", "OpenAI API"],
+      "category": "web-app",
+      "featured": true,
+      "date": "2025-07-24"
+    },
+    {
       "id": "moviefinder",
       "title": "MovieFinder",
       "description": "A web application for discovering and searching movies with detailed information and ratings",
@@ -20,9 +51,29 @@
       "id": "factions-discord-bot",
       "title": "Minecraft <-> Discord Bot",
       "description": "A robust, full-featured Discord bot designed specifically for Minecraft Factions servers. Xenon connects Discord users to their in-game counterparts and provides powerful moderation, faction management, alerts, and automation tools.",
-      "longDescription": "Note: This project was originally created in 2020 and is now deprecated.\n\nA robust, full-featured Discord bot designed specifically for Minecraft Factions servers. Xenon connects Discord users to their in-game counterparts and provides powerful moderation, faction management, alerts, and automation tools.\n\nThis was originally developed as a private project intended for client distribution, which is why MongoDB-based authorization was implemented to control access.\n\n📦 Features\n🔗 In-Game ↔ Discord Integration\nSyncs Minecraft accounts to Discord users.\nSend in-game commands directly from Discord (sudo, runcmd, rotate).\nLink deposit/withdrawal alerts to Discord.\nView faction and player stats live from Minecraft (ftop, ptop, fwho, etc).\n🧾 Application System\nFully configurable recruitment flow via setupquestions, apply, accept, and deny.\nView application status directly on Discord.\n🛠️ Moderation & Utility Tools\nCommands for kick, ban, purge, say, embed, lock, and unlock.\nInformation tools like serverinfo, botstats, listroles, and inrole.\nMathematical utilities (calc, calculator).\nMusic playback via YouTube (play, pause, loop).\n📊 Faction Leaderboards & Stats\nplaytime, deposit, playtop, dtop for player contribution tracking.\nwalls, buffers, rposttop, ctop, btop for checker activity.\nLive ftop, ptop, and baltop integration.\nVanish tracker that allows players to bypass server plugins that hid staff members ingame (vanish)\n🚨 Alerts & Detectors\nTNT, player, and creeper proximity alerts (with coordinates).\nAuto claim, bank, and player count tracking via regex matchers.\nkill logs track PvP deaths using customizable regex.\n🧪 Checks & Raiding Tools\nWall/buffer clearing (clear, bclear), weewoo raid alerts.\nOutpost/KOTH support via routpost, koth, outpost.\n⚙️ Fully Configurable\nYAML-driven config system: bot settings, role/channel IDs, regex formats, toggles.\nBuilt-in settings command for real-time updates to config via Discord.\nOptional modules can be enabled/disabled per feature: walls, bank, music, etc.\nPrerequisites\nNode.js (v12+ recommended)\nDiscord.JS (v12)\nMongoDB (used for auth logging)\nFFmpeg (required for music playback)\nA verified Minecraft account (for the bot)",
+      "longDescription": "Note: This project was originally created in 2020 and is now deprecated.\n\nA robust, full-featured Discord bot designed specifically for Minecraft Factions servers. Xenon connects Discord users to their in-game counterparts and provides powerful moderation, faction management, alerts, and automation tools.\n\nThis was originally developed as a private project intended for client distribution, which is why MongoDB-based authorization was implemented to control access.\n\n📦 Features\n🔗 In-Game ↔ Discord Integration\nSyncs Minecraft accounts to Discord users.\nSend in-game commands directly from Discord (sudo, runcmd, rotate).\nLink deposit/withdrawal alerts to Discord.\nView faction and player stats live from Minecraft (ftop, ptop, fwho, etc).\n\n🧾 Application System\nFully configurable recruitment flow via setupquestions, apply, accept, and deny.\nView application status directly on Discord.\n\n🛠️ Moderation & Utility Tools\nCommands for kick, ban, purge, say, embed, lock, and unlock.\nInformation tools like serverinfo, botstats, listroles, and inrole.\nMathematical utilities (calc, calculator).\nMusic playback via YouTube (play, pause, loop).\n\n📊 Faction Leaderboards & Stats\nplaytime, deposit, playtop, dtop for player contribution tracking.\nwalls, buffers, rposttop, ctop, btop for checker activity.\nLive ftop, ptop, and baltop integration.\nVanish tracker that allows players to bypass server plugins that hid staff members ingame (vanish)\n\n🚨 Alerts & Detectors\nTNT, player, and creeper proximity alerts (with coordinates).\nAuto claim, bank, and player count tracking via regex matchers.\nkill logs track PvP deaths using customizable regex.\n\n🧪 Checks & Raiding Tools\nWall/buffer clearing (clear, bclear), weewoo raid alerts.\nOutpost/KOTH support via routpost, koth, outpost.\n\n⚙️ Fully Configurable\nYAML-driven config system: bot settings, role/channel IDs, regex formats, toggles.\nBuilt-in settings command for real-time updates to config via Discord.\nOptional modules can be enabled/disabled per feature: walls, bank, music, etc.\nPrerequisites\nNode.js (v12+ recommended)\nDiscord.JS (v12)\nMongoDB (used for auth logging)\nFFmpeg (required for music playback)\nA verified Minecraft account (for the bot)",
       "image": "/images/projects/xenon-bot/XenonTah.png?w=800&h=400&fit=crop",
       "photos": [
+        {
+          "url": "/images/projects/xenon-bot/IngameCommands.jpg",
+          "caption": "Ingame commands that can be used in discord",
+          "alt": "Ingame Commands"
+        },
+        {
+          "url": "/images/projects/xenon-bot/ModerationCommands.jpg",
+          "caption": "Moderation commands that can be used in discord",
+          "alt": "Moderation Commands"
+        },
+        {
+          "url": "/images/projects/xenon-bot/AdminCommands.PNG",
+          "caption": "Admin commands that can be used in discord",
+          "alt": "Admin Commands"
+        },
+        {
+          "url": "/images/projects/xenon-bot/AltManager.jpg",
+          "caption": "Ability to control multiple accounts simultaneously allowing for easy alt management",
+          "alt": "Alt Manager"
+        },
         {
           "url": "/images/projects/xenon-bot/FTopUpdate.webp",
           "caption": "Retrieves ingame leaderboard and formats it for Discord",
@@ -49,7 +100,7 @@
       "technologies": ["JavaScript", "Node.js", "JSON", "MongoDB", "YAML", "FFmpeg"],
       "category": "game-dev",
       "featured": true,
-      "date": "2024-02-20"
+      "date": "2020-02-20"
     },
     {
       "id": "scout",
