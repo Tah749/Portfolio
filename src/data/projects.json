@@ -5,7 +5,7 @@
       "title": "MovieFinder",
       "description": "A web application for discovering and searching movies with detailed information and ratings",
       "longDescription": "MovieFinder is a comprehensive movie discovery platform that allows users to search for films, view detailed information including cast, ratings, and plot summaries. Built with modern JavaScript, it provides an intuitive interface for movie enthusiasts to explore new content and track their favorite films.",
-      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop",
+      "image": "/images/projects/moviefinder/MovieFinder.png",
       "videoUrl": "https://www.loom.com/embed/your-video-id-here",
       "photos": [
       ],
