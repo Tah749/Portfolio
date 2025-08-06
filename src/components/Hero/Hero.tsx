@@ -1,5 +1,5 @@
 'use client';
-import { Download, Eye, Github, Linkedin, Mail } from 'lucide-react';
+import { Download, Eye, Github, Linkedin, Mail, Code } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -115,6 +115,14 @@ export default function Hero() {
                 className="group p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 <Linkedin size={24} className="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 transition-colors" />
+              </a>
+              <a
+                href="https://leetcode.com/u/tahmedshamim/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <Code size={24} className="text-gray-700 dark:text-gray-300 group-hover:text-orange-600 transition-colors" />
               </a>
               <a
                 href="mailto:tahmedshamim@gmail.com"

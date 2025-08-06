@@ -6,6 +6,7 @@ export interface SiteConfig {
     email: string;
     github: string;
     linkedin: string;
+    leetcode: string;
     location: string;
     timezone: string;
   };

@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Sun, Moon, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Sun, Moon, Github, Linkedin, Mail, Code } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,6 +62,7 @@ export default function Header() {
   const socialLinks = [
     { href: 'https://github.com/Tah749', icon: Github, label: 'GitHub' },
     { href: 'https://linkedin.com/in/tahmed-shamim-3aaaa32a6/', icon: Linkedin, label: 'LinkedIn' },
+    { href: 'https://leetcode.com/u/tahmedshamim/', icon: Code, label: 'LeetCode' },
     { href: 'mailto:tahmedshamim@gmail.com', icon: Mail, label: 'Email' },
   ];
 
