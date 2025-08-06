@@ -4,7 +4,7 @@ import { getProjectDescription } from './github';
 
 export async function getProjects(): Promise<Project[]> {
   const projects = await import('../data/projects.json');
-  const projectsList = projects.default.projects;
+  const projectsList = projects.default.projects as Project[];
   
   // Sort projects by date (newer first)
   return [...projectsList].sort((a, b) => {
@@ -16,7 +16,7 @@ export async function getProjects(): Promise<Project[]> {
 
 export async function getEnhancedProjects(): Promise<Project[]> {
   const projects = await import('../data/projects.json');
-  const baseProjects = projects.default.projects;
+  const baseProjects = projects.default.projects as Project[];
   
   // Sort projects by date (newer first) before enhancing
   const sortedProjects = [...baseProjects].sort((a, b) => {
