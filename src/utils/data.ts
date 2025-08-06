@@ -7,7 +7,7 @@ export async function getProjects(): Promise<Project[]> {
   const projectsList = projects.default.projects;
   
   // Sort projects by date (newer first)
-  return projectsList.sort((a, b) => {
+  return [...projectsList].sort((a, b) => {
     const dateA = new Date(a.date);
     const dateB = new Date(b.date);
     return dateB.getTime() - dateA.getTime(); // Descending order (newer first)
@@ -19,7 +19,7 @@ export async function getEnhancedProjects(): Promise<Project[]> {
   const baseProjects = projects.default.projects;
   
   // Sort projects by date (newer first) before enhancing
-  const sortedProjects = baseProjects.sort((a, b) => {
+  const sortedProjects = [...baseProjects].sort((a, b) => {
     const dateA = new Date(a.date);
     const dateB = new Date(b.date);
     return dateB.getTime() - dateA.getTime(); // Descending order (newer first)
