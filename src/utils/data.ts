@@ -13,7 +13,12 @@ export async function getProjects(): Promise<Project[]> {
     return dateB.getTime() - dateA.getTime(); // Descending order (newer first)
   });
   
-  return sortedProjects as Project[];
+  // Explicitly cast each project to ensure type compatibility
+  return sortedProjects.map(project => ({
+    ...project,
+    githubUrl: project.githubUrl as string | null,
+    liveUrl: project.liveUrl as string | null
+  })) as Project[];
 }
 
 export async function getEnhancedProjects(): Promise<Project[]> {
@@ -46,7 +51,12 @@ export async function getEnhancedProjects(): Promise<Project[]> {
     })
   );
   
-  return enhancedProjects as Project[];
+  // Explicitly cast each project to ensure type compatibility
+  return enhancedProjects.map(project => ({
+    ...project,
+    githubUrl: project.githubUrl as string | null,
+    liveUrl: project.liveUrl as string | null
+  })) as Project[];
 }
 
 export async function getSiteConfig(): Promise<SiteConfig> {
