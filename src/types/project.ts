@@ -13,7 +13,7 @@ export interface Project {
   photos?: ProjectPhoto[];
   videoUrl?: string; // Loom video URL
   liveUrl?: string | null;
-  githubUrl?: string;
+  githubUrl?: string | null;
   technologies: string[];
   category: string;
   featured: boolean;
