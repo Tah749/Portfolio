@@ -10,7 +10,7 @@
       ],
       "liveUrl": null,
       "githubUrl": null,
-      "technologies": ["React", "Tailwind", "Expo", "TypeScript", "Supabase"],
+      "technologies": ["React", "Tailwind", "Expo", "TypeScript", "PostgresSQL"],
       "category": "mobile-app",
       "featured": true,
       "date": "2025-08-05"
@@ -97,7 +97,7 @@
       ],
       "liveUrl": null,
       "githubUrl": "https://github.com/Tah749/FactionsDiscordBot",
-      "technologies": ["JavaScript", "Node.js", "JSON", "MongoDB", "YAML", "FFmpeg"],
+      "technologies": ["JavaScript", "Node.js", "SQLite", "MongoDB", "JSON", "YAML", "FFmpeg"],
       "category": "game-dev",
       "featured": true,
       "date": "2020-02-20"
@@ -111,7 +111,7 @@
       "liveUrl": null,
       "githubUrl": "https://github.com/Tah749/Scout",
       "technologies": ["JavaScript", "Node.js", "Python", "Data Processing", "API Integration"],
-      "category": "tool",
+      "category": "web-app",
       "featured": false,
       "date": "2022-03-10"
     },
