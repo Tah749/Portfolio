@@ -18,4 +18,5 @@ export interface Project {
   category: string;
   featured: boolean;
   date: string;
+  status?: 'in-development' | 'deprecated' | 'completed'; // Project status
 } 

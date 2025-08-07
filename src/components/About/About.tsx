@@ -3,35 +3,37 @@ import { Code, Database, Smartphone, Palette, Server, Zap } from 'lucide-react';
 
 export default function About() {
   const skills = [
-    { name: 'React/Next.js', level: 90, icon: Code, color: 'from-blue-500 to-blue-600' },
-    { name: 'Node.js/Express', level: 85, icon: Server, color: 'from-green-500 to-green-600' },
-    { name: 'TypeScript', level: 88, icon: Code, color: 'from-blue-600 to-blue-700' },
-    { name: 'MongoDB/PostgreSQL', level: 80, icon: Database, color: 'from-purple-500 to-purple-600' },
-    { name: 'Mobile Development', level: 75, icon: Smartphone, color: 'from-orange-500 to-orange-600' },
-    { name: 'UI/UX Design', level: 70, icon: Palette, color: 'from-pink-500 to-pink-600' },
+    { name: 'React/Next.js', icon: Code, color: 'from-blue-500 to-blue-600' },
+    { name: 'Node.js/Express', icon: Server, color: 'from-green-500 to-green-600' },
+    { name: 'TypeScript', icon: Code, color: 'from-blue-600 to-blue-700' },
+    { name: 'Java', icon: Code, color: 'from-orange-500 to-orange-600' },
+    { name: 'Python', icon: Code, color: 'from-yellow-500 to-yellow-600' },
+    { name: 'MongoDB/PostgreSQL', icon: Database, color: 'from-purple-500 to-purple-600' },
+    { name: 'Mobile Development', icon: Smartphone, color: 'from-pink-500 to-pink-600' },
+    { name: 'UI/UX Design', icon: Palette, color: 'from-indigo-500 to-indigo-600' },
   ];
 
   const experiences = [
     {
-      year: '2023 - Present',
-      title: 'Senior Full Stack Developer',
-      company: 'Tech Company',
-      description: 'Leading development of scalable web applications using React, Node.js, and cloud technologies.',
-      technologies: ['React', 'Node.js', 'AWS', 'Docker']
-    },
-    {
-      year: '2021 - 2023',
+      year: '2024 - Present',
       title: 'Full Stack Developer',
-      company: 'Startup Inc',
-      description: 'Built and maintained multiple web applications, focusing on user experience and performance.',
-      technologies: ['React', 'Express', 'MongoDB', 'Redis']
+      company: 'Personal Projects & Freelance',
+      description: 'Building modern web applications and mobile apps using React, Next.js, TypeScript, and Flutter. Focused on creating intuitive user experiences and scalable solutions.',
+      technologies: ['React', 'Next.js', 'TypeScript', 'Flutter']
     },
     {
-      year: '2020 - 2021',
-      title: 'Frontend Developer',
-      company: 'Digital Agency',
-      description: 'Developed responsive websites and web applications for various clients.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS']
+      year: '2023 - 2024',
+      title: 'Student Developer',
+      company: 'Newcastle University',
+      description: 'Developed projects for coursework and personal learning, including fantasy football platforms, data visualization tools, and mobile applications.',
+      technologies: ['JavaScript', 'Python', 'React', 'Node.js']
+    },
+    {
+      year: '2022 - 2023',
+      title: 'Open Source Contributor',
+      company: 'GitHub Community',
+      description: 'Contributed to various open-source projects, built personal projects, and collaborated with other developers in the community.',
+      technologies: ['JavaScript', 'Python', 'Git', 'GitHub']
     }
   ];
 
@@ -67,16 +69,15 @@ export default function About() {
                 My Journey
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                I started my journey in web development over 3 years ago, and since then, I&apos;ve had the privilege 
-                of working on diverse projects that have shaped my expertise. From small business websites to 
-                complex enterprise applications, I&apos;ve learned that great software is built on a foundation of 
-                clean code, user-centered design, and scalable architecture.
+                I&apos;ve been passionate about coding since 2018, starting with simple HTML and CSS projects. Over the past 6 years, 
+                I&apos;ve evolved from building basic websites to creating full-stack applications, mobile apps, and data visualization tools. 
+                My journey has taken me through various technologies - from JavaScript and Python to React, Next.js, and Flutter.
               </p>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open-source projects, 
-                or sharing knowledge with the developer community. I believe in continuous learning and staying 
-                up-to-date with the latest industry trends.
-              </p>
+                             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                 Currently studying at Newcastle University, I&apos;ve had the opportunity to work on diverse projects like fantasy football platforms, 
+                 Discord bots, and AI-powered applications. Each project has taught me something new about clean code, user experience, 
+                 and scalable architecture. When I&apos;m not coding, you&apos;ll find me exploring new technologies and contributing to open-source projects.
+               </p>
             </div>
 
             {/* Skills */}
@@ -84,29 +85,18 @@ export default function About() {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Technical Skills
               </h3>
-              <div className="space-y-6">
+              <div className="grid grid-cols-2 gap-4">
                 {skills.map((skill) => {
                   const IconComponent = skill.icon;
                   return (
-                    <div key={skill.name} className="group">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-3">
-                          <div className={`p-2 bg-gradient-to-r ${skill.color} rounded-lg shadow-lg`}>
-                            <IconComponent size={20} className="text-white" />
-                          </div>
-                          <span className="font-medium text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                            {skill.name}
-                          </span>
+                    <div key={skill.name} className="group p-4 bg-white dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-600">
+                      <div className="flex items-center gap-3">
+                        <div className={`p-2 bg-gradient-to-r ${skill.color} rounded-lg shadow-lg`}>
+                          <IconComponent size={20} className="text-white" />
                         </div>
-                        <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                          {skill.level}%
+                        <span className="font-medium text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                          {skill.name}
                         </span>
-                      </div>
-                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
-                        <div 
-                          className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out`}
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
                       </div>
                     </div>
                   );
@@ -117,9 +107,9 @@ export default function About() {
 
           {/* Experience Timeline */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
-              Professional Experience
-            </h3>
+                          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+                Development Journey
+              </h3>
             <div className="space-y-8">
               {experiences.map((experience) => (
                 <div key={experience.title} className="relative group">

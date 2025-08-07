@@ -13,7 +13,8 @@
       "technologies": ["React", "Tailwind", "Expo", "TypeScript", "PostgresSQL"],
       "category": "mobile-app",
       "featured": true,
-      "date": "2025-08-05"
+      "date": "2025-08-05",
+      "status": "in-development"
     },
     {
       "id": "plana",
@@ -29,7 +30,20 @@
       "technologies": ["Next.js", "Tailwind", "TypeScript", "OpenAI API"],
       "category": "web-app",
       "featured": true,
-      "date": "2025-07-24"
+      "date": "2025-07-24",
+      "status": "in-development",
+      "photos": [
+        {
+          "url": "/images/projects/plana/CreateApp.png",
+          "caption": "Create Application",
+          "alt": "Create Application"
+        },
+        {
+          "url": "/images/projects/plana/Session.png",
+          "caption": "Conversations with AI",
+          "alt": "Plana Sessions"
+        }
+      ]
     },
     {
       "id": "moviefinder",
@@ -100,7 +114,8 @@
       "technologies": ["JavaScript", "Node.js", "SQLite", "MongoDB", "JSON", "YAML", "FFmpeg"],
       "category": "game-dev",
       "featured": true,
-      "date": "2020-02-20"
+      "date": "2020-02-20",
+      "status": "deprecated"
     },
     {
       "id": "scout",
@@ -113,6 +128,7 @@
       "technologies": ["JavaScript", "Node.js", "Python", "Data Processing", "API Integration"],
       "category": "web-app",
       "featured": false,
+      "status": "deprecated",
       "date": "2022-03-10"
     },
     {

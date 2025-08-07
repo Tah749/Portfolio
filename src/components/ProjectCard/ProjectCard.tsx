@@ -1,6 +1,6 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import { ExternalLink, Github, Eye, Play } from 'lucide-react';
+import { ExternalLink, Github, Eye } from 'lucide-react';
 import Image from 'next/image';
 import { Project } from '../../types/project';
 
@@ -72,13 +72,27 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
         )}
 
-        {/* Video Badge */}
-        {project.videoUrl && (
+        {/* Status Badge */}
+        {project.status && (
           <div className="absolute top-4 right-4">
-            <span className="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white text-xs font-semibold rounded-full shadow-lg flex items-center gap-1">
-              <Play size={12} />
-              Demo
-            </span>
+            {project.status === 'in-development' && (
+              <span className="px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xs font-semibold rounded-full shadow-lg flex items-center gap-1">
+                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                In Development
+              </span>
+            )}
+            {project.status === 'deprecated' && (
+              <span className="px-3 py-1 bg-gradient-to-r from-red-400 to-red-600 text-white text-xs font-semibold rounded-full shadow-lg flex items-center gap-1">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                Deprecated
+              </span>
+            )}
+            {project.status === 'completed' && (
+              <span className="px-3 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white text-xs font-semibold rounded-full shadow-lg flex items-center gap-1">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                Completed
+              </span>
+            )}
           </div>
         )}
       </div>
