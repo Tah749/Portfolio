@@ -23,8 +23,6 @@
       "longDescription": "Plana is a web application designed to simplify the planning permission application process for developers through the use of AI. It provides a user-friendly interface that allows developers to input their project details and receive a detailed planning permission application in return. The application is currently in development and is not yet live.",
       "image": "/images/projects/plana/Plana.png",
       "videoUrl": "https://www.loom.com/share/555aab69bb2c40f09e4089ae62916589?sid=c0ecc33d-e013-4e13-82bf-d09f0da3560e",
-      "photos": [
-      ],
       "liveUrl": null,
       "githubUrl": null,
       "technologies": ["Next.js", "Tailwind", "TypeScript", "OpenAI API"],
