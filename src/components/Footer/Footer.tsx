@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                YourName.dev
+                Tahmed-Shamim.vercel.app
               </h3>
               <p className="text-gray-400 mt-4 leading-relaxed">
                 Full-stack developer passionate about creating innovative digital solutions. 

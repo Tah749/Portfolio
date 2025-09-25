@@ -44,22 +44,6 @@
       ]
     },
     {
-      "id": "moviefinder",
-      "title": "MovieFinder",
-      "description": "A web application for discovering and searching movies with detailed information and ratings",
-      "longDescription": "MovieFinder is a comprehensive movie discovery platform that allows users to search for films, view detailed information including cast, ratings, and plot summaries. Built with modern JavaScript, it provides an intuitive interface for movie enthusiasts to explore new content and track their favorite films.",
-      "image": "/images/projects/moviefinder/MovieFinder.png",
-      "videoUrl": "https://www.loom.com/embed/your-video-id-here",
-      "photos": [
-      ],
-      "liveUrl": "https://tah749.github.io/MovieFinder",
-      "githubUrl": "https://github.com/Tah749/MovieFinder",
-      "technologies": ["JavaScript", "HTML", "CSS", "Movie API"],
-      "category": "web-app",
-      "featured": true,
-      "date": "2024-01-15"
-    },
-    {
       "id": "factions-discord-bot",
       "title": "Minecraft <-> Discord Bot",
       "description": "A robust, full-featured Discord bot designed specifically for Minecraft Factions servers. Xenon connects Discord users to their in-game counterparts and provides powerful moderation, faction management, alerts, and automation tools.",
@@ -128,34 +112,6 @@
       "featured": false,
       "status": "deprecated",
       "date": "2022-03-10"
-    },
-    {
-      "id": "fpl-visualisation",
-      "title": "FPL Visualization",
-      "description": "Data visualization project for Fantasy Premier League statistics and analysis",
-      "longDescription": "FPL-Visualisation is a comprehensive data analysis project that creates interactive visualizations for Fantasy Premier League data. Using Jupyter Notebooks and data science libraries, it provides insights into player performance, team statistics, and strategic recommendations for FPL managers. The project demonstrates advanced data visualization techniques and statistical analysis.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
-      "photos": [
-      ],
-      "liveUrl": null,
-      "githubUrl": "https://github.com/Tah749/FPL-Visualisation",
-      "technologies": ["Python", "Jupyter Notebook", "Pandas", "Matplotlib", "Seaborn"],
-      "category": "data-science",
-      "featured": true,
-      "date": "2024-04-05"
-    },
-    {
-      "id": "golf-buddy",
-      "title": "Golf Buddy",
-      "description": "A golf companion app for tracking scores, statistics, and improving your game",
-      "longDescription": "GolfBuddy is a comprehensive golf application designed to help players track their performance, analyze statistics, and improve their game. It features score tracking, handicap calculation, course management, and performance analytics to provide golfers with detailed insights into their playing patterns and areas for improvement.",
-      "image": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800&h=400&fit=crop",
-      "liveUrl": null,
-      "githubUrl": "https://github.com/Tah749/GolfBuddy",
-      "technologies": ["JavaScript", "React", "Local Storage", "Sports API"],
-      "category": "mobile-app",
-      "featured": false,
-      "date": "2024-05-01"
     }
   ]
 } 

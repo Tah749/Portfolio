@@ -22,18 +22,18 @@ export default function About() {
       technologies: ['React', 'Next.js', 'TypeScript', 'Flutter']
     },
     {
-      year: '2023 - 2024',
+      year: '2023 - 2025',
       title: 'Student Developer',
       company: 'Newcastle University',
       description: 'Developed projects for coursework and personal learning, including fantasy football platforms, data visualization tools, and mobile applications.',
-      technologies: ['JavaScript', 'Python', 'React', 'Node.js']
+      technologies: ['JavaScript', 'Python', 'C#', 'SQL', 'Node.js']
     },
     {
-      year: '2022 - 2023',
-      title: 'Open Source Contributor',
-      company: 'GitHub Community',
-      description: 'Contributed to various open-source projects, built personal projects, and collaborated with other developers in the community.',
-      technologies: ['JavaScript', 'Python', 'Git', 'GitHub']
+      year: '2018 - 2023',
+      title: 'Coding Hobbiest',
+      company: 'Personal Projects',
+      description: 'Building personal projects to improve my skills and learn new technologies.',
+      technologies: ['JavaScript', 'Python', 'Java']
     }
   ];
 
